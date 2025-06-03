@@ -1,0 +1,74 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kick Store - Venta de Tenis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.png" ></div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#" id="loginMenuLink">Iniciar Sesión</a>
+
+      <a href="productos.html">Productos</a>
+      <a href="info.html">Información</a>
+      <a href="contactos.html">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="login-section" id="loginSection" style="display: none;">
+    <h2>Iniciar Sesión</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Usuario" required />
+      <input type="password" id="password" placeholder="Contraseña" required />
+      <button type="submit">Entrar</button>
+    </form>
+  </section>
+
+  <section class="user-info" id="userInfo" style="display: none;">
+    <img src="saludo.gif" alt="Usuario" class="user-avatar">
+    <p id="welcomeMessage"></p>
+    <button id="logoutButton">Cerrar Sesión</button>
+  </section>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Kick Store</h1>
+      <p>En cada paso hay una historia. En cada suela, un destino. Nuestra tienda nació para acompañar tu camino, ya sea que corras detrás de tus sueños o simplemente quieras llegar más lejos. Distribuimos tennis que no solo se ven bien, sino que se mueven contigo.</p>
+    </div>
+    <img src="hola.jpg" alt="Tenis destacados">
+  </section>
+
+  <section class="products" id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="hola1.jpg" alt="Tenis 1">
+        <h3>Tenis Urbanos</h3>
+        <p>Diseño moderno y comodidad asegurada para tu día a día.</p>
+      </div>
+      <div class="product">
+        <img src="hola2.jpg" alt="Tenis 2">
+        <h3>Tenis Deportivos</h3>
+        <p>Perfectos para entrenamientos y actividades físicas.</p>
+      </div>
+      <div class="product">
+        <img src="hola3.jpg" alt="Tenis 3">
+        <h3>Tenis Edición Limitada</h3>
+        <p>Modelos únicos para verdaderos coleccionistas.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contacto">
+    <p>&copy; 2025 Kick Store - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
